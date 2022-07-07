@@ -1,0 +1,23 @@
+package jpabook.jpashop.domain.item;
+
+import jpabook.jpashop.domain.Category;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //JPA 상속 전략: 싱글 테이블 전략
+@DiscriminatorColumn(name = "dtype")
+@Getter @Setter
+public abstract class Item {
+    @Id
+    @GeneratedValue
+    @Column(name = "item_id")
+    private Long id;
+
+    private String name;
+    private int stockQuantity;
+    private List<Category> categories;
+}
