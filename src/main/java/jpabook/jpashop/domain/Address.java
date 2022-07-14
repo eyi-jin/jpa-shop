@@ -11,7 +11,7 @@ public class Address {
     private String street;
     private String zipcode;
 
-    protected Address(){
+    protected Address(){ //JPA 스펙상 리플렉션, 프록시 기술 적용하기 위함
 
     }
 
