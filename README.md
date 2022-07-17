@@ -1,3 +1,3 @@
 # jpa-shop spring project
 
-###using MVC JPA Spring
+### using MVC JPA Spring
