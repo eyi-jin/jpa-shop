@@ -9,11 +9,17 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 public class MemberApiController {
     private final MemberService memberService;
+
+    @GetMapping("/api/v1/members")
+    public List<Member> membersV1(){
+        return memberService.findMembers();
+    }
 
     /**
      * 등록 V1: 요청 값으로 Member 엔티티를 직접 받는다.
