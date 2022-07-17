@@ -26,4 +26,10 @@ public class ItemService { //ItemRepository에 위임하는 class임
     public Item findOne(Long id){
         return itemRepository.findOne(id);
     }
+    @Transactional
+    public void updateItem(Long id, String name, int price) {
+        Item item = itemRepository.findOne(id);
+        item.setName(name);
+        item.setPrice(price);
+    }
 }
