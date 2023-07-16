@@ -74,7 +74,7 @@ public class ItemController {
 //        book.setAuthor(form.getAuthor());
 //        book.setIsbn(form.getIsbn());
 //        itemService.saveItem(book);
-        itemService.updateItem(form.getId(), form.getName(), form.getPrice());
+        itemService.updateItem(form.getId(), form.getName(), form.getPrice(), form.getStockQuantity());
         return "redirect:/items";
     }
 }

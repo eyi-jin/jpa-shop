@@ -1,0 +1,13 @@
+                                                         ${AnsiColor.GREEN}  .-.
+    ${AnsiColor.MAGENTA}|\__/,|   (`\                                        ${AnsiColor.GREEN} /'v'\
+  ${AnsiColor.MAGENTA}_.| ' ' |_   ) )                                      ${AnsiColor.GREEN} (/   \)
+=${AnsiColor.MAGENTA}(((${AnsiColor.WHITE}===${AnsiColor.MAGENTA}(((${AnsiColor.WHITE}==============================================='=${AnsiColor.GREEN}"${AnsiColor.WHITE}=${AnsiColor.GREEN}"${AnsiColor.WHITE}=================
+${AnsiColor.BRIGHT_RED}U _____ u __   __               ____      __  __          |_| _     U _____ u
+${AnsiColor.BRIGHT_RED}\| ___"|/ \ \ / /    ___       / __"| u U|' \/ '|u   ___     |"|    \| ___"|/
+${AnsiColor.BRIGHT_YELLOW} |  _|"    \ V /    |_"_|     <\___ \/  \| |\/| |/  |_"_|  U | | u   |  _|"
+${AnsiColor.BRIGHT_GREEN} | |___   U_|"|_u    | |       u___) |   | |  | |    | |    \| |/__  | |___
+${AnsiColor.BLUE} |_____|    |_|    U/| |\u     |____/>>  |_|  |_|  U/| |\u   |_____| |_____|
+${AnsiColor.MAGENTA}<<   >>.-,//|(_.-,_|___|_,-.   )(  (__)<<,-,,-..-,_|___|_,-.//  \\  <<   >>
+${AnsiColor.MAGENTA}(__) (__)\_) (__)\_)-' '-(_/   (__)      (./  \.)\_)-' '-(_/(_")("_)(__) (__)${Ansi.NORMAL}
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}

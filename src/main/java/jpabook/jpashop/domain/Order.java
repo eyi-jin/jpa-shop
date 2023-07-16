@@ -4,15 +4,13 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.aspectj.weaver.ast.Or;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import static javax.persistence.FetchType.*;
+import static javax.persistence.FetchType.LAZY;
 
 @Entity
 @Table(name = "orders") //order by로 인식될 수 있는 가능성 방지
@@ -25,7 +23,7 @@ public class Order {
     private Long id;
 
     @ManyToOne(fetch = LAZY)
-    @JoinColumn(name = "member_id") //FK
+    @JoinColumn(name = "member_id") //FK 매핑
     private Member member;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)

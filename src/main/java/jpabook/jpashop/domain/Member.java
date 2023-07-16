@@ -22,6 +22,6 @@ public class Member {
     private Address address;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "member") //읽기 전용, 매핑된 거울!
+    @OneToMany(mappedBy = "member") //읽기 전용, 매핑된 거울! 연관관계 주인이 아닌 쪽에 적음
     private List<Order> orders = new ArrayList<>();
 }
